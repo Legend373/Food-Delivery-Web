@@ -6,7 +6,7 @@
   font-family: Outfit;
 }
 body {
-  min-height: 100vh;
+  max-height: 100vh;
   background-color: #fcfcfc;
 }
 a {
@@ -20,4 +20,9 @@ hr {
 }
 .app-content {
   display: flex;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
