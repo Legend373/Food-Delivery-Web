@@ -4,6 +4,7 @@ import { assets } from '../../assets/frontend_assets/assets'
 import { useContext } from 'react'
 import { StoreContext } from '../../context/StoreContext'
 import axios from "axios"
+//import { toast } from 'react-toastify';
 
 const LoginPopup = ({ setShowLogin }) => {
     const [currState, setCurrState] = useState("Login")
@@ -32,6 +33,8 @@ const LoginPopup = ({ setShowLogin }) => {
             setToken(response.data.token);
             localStorage.setItem("token", response.data.token)
             setShowLogin(false)
+            // toast.success(response.data.message)
+
 
         }
         else {
